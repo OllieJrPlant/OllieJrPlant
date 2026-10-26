@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>新手零失敗！鹿角蕨水苔上板完整教學</title>
+<style>
+:root{--bg:#f6f4ec;--surface:#fff;--ink:#1f2b22;--muted:#5d6b61;--accent:#2f6b45;--line:#dfe3d6;--warn:#b5532f;--hero1:#1f4d33;--hero2:#3f7f56;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--surface:#1a251e;--ink:#e8efe9;--muted:#9fb0a4;--accent:#7fc596;--line:#2b3a30;--warn:#e58a65;--hero1:#0f2a1b;--hero2:#24553a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a15;--surface:#1a251e;--ink:#e8efe9;--muted:#9fb0a4;--accent:#7fc596;--line:#2b3a30;--warn:#e58a65;--hero1:#0f2a1b;--hero2:#24553a;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.8}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--surface);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;justify-content:center}
+nav a{white-space:nowrap;color:var(--muted);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:99px}
+nav a:hover{background:var(--line);color:var(--ink)}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#f3f8f3;text-align:center;padding:72px 20px 64px}
+.hero .tag{display:inline-block;font-size:13px;letter-spacing:.15em;border:1px solid rgba(255,255,255,.4);padding:3px 14px;border-radius:99px}
+.hero h1{font-size:clamp(28px,6vw,46px);line-height:1.3;margin:18px 0 10px}
+.hero p{max-width:620px;margin:0 auto;opacity:.9}
+main{max-width:860px;margin:0 auto;padding:0 18px 60px}
+section{margin-top:52px}
+h2{font-size:26px;margin:0 0 6px}
+h2 small{display:block;font-size:14px;color:var(--muted);font-weight:400}
+.lead{margin-top:-24px;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.lead p{margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h3{margin:0 0 8px;font-size:17px;color:var(--accent)}
+.card ul{margin:0;padding:0;list-style:none}
+.card li{padding:4px 0}
+.card label{display:flex;gap:10px;cursor:pointer;align-items:flex-start}
+.card input{margin-top:8px;accent-color:var(--accent);width:16px;height:16px;flex:none}
+.card input:checked+span{text-decoration:line-through;opacity:.5}
+.prog{margin-top:14px;font-size:14px;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.steps{counter-reset:s;margin-top:18px;display:grid;gap:16px}
+.step{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px 20px 78px;position:relative}
+.step::before{content:counter(s);position:absolute;left:20px;top:20px;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:20px}
+.step h3{margin:0 0 8px;font-size:19px}
+.step ul{margin:6px 0 0;padding-left:20px}
+.step li{margin:4px 0}
+.key{background:color-mix(in srgb,var(--warn) 12%,transparent);border-left:4px solid var(--warn);padding:10px 14px;border-radius:6px;margin-top:10px;font-size:15px}
+.tabs{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 16px;border-radius:99px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.panel{display:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:12px}
+.panel.on{display:block}
+.panel h4{margin:0 0 6px}
+.panel ul{margin:6px 0;padding-left:20px}
+.panel p{margin:0 0 10px}
+.pit{border:1px solid var(--line);border-left:4px solid var(--warn);background:var(--surface);border-radius:0 12px 12px 0;padding:14px 18px;margin-top:12px}
+.pit b{color:var(--warn)}
+.pit p{margin:4px 0 0;color:var(--muted);font-size:15px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 18px 40px}
+@media (max-width:520px){.step{padding:70px 18px 18px}.step::before{left:18px;top:16px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#intro">簡介</a><a href="#tools">材料清單</a><a href="#steps">四步驟</a><a href="#care">養護指南</a><a href="#pitfalls">避坑</a><a href="#next">延伸</a>
+</nav>
+
+<header class="hero">
+<span class="tag">PLATYCERIUM · 新手教學</span>
+<h1>🌿 新手零失敗！<br>鹿角蕨水苔上板完整教學</h1>
+<p>從零打造質感牆面綠意藝術</p>
+</header>
+
+<main>
+<section id="intro" style="margin-top:0">
+<div class="lead">
+<p>鹿角蕨（Platycerium）擁有充滿野生張力的姿態，其優雅的營養葉（臉）與分叉的手（孢子葉），是現代室內綠化與空間設計中最受歡迎的觀葉植物之一。在自然界中，鹿角蕨屬於附生植物，多生長於大樹樹幹或岩壁上。將鹿角蕨進行「水苔上板」，不僅能完美還原其原生生長環境，讓根系與生長點順暢發育，更能將植物轉化為家居牆面上的綠色藝術品。</p>
+<p style="margin-top:12px;color:var(--muted)">本篇教學專為植栽新手與綠手指愛好者設計，從工具挑選、介質調配、上板實作到後續養護指南，手把手帶您完成專屬的鹿角蕨上板作品。</p>
+</div>
+</section>
+
+<section id="tools">
+<h2>🛠 準備材料與工具清單<small>在開始手作之前，請先備齊以下工具與材料（可點選勾選）</small></h2>
+<div class="grid">
+<div class="card"><h3>植物主角</h3><ul>
+<li><label><input type="checkbox"><span>鹿角蕨植株：選擇根系健康、開展良好的個體（如亞洲猴腦、普通鹿角蕨、深綠鹿角蕨、女王鹿角蕨等）</span></label></li></ul></div>
+<div class="card"><h3>板材與底材</h3><ul>
+<li><label><input type="checkbox"><span>木板／板材：碳化木板、防腐松木板、蛇木板或椰纖板（約長 25–30 公分、寬 20–25 公分），預先於頂端鎖上螺絲鉤或 S 鉤以便掛牆</span></label></li>
+<li><label><input type="checkbox"><span>底層透氣介質：塊狀樹皮或椰塊（少量，墊底增加透氣排水）</span></label></li></ul></div>
+<div class="card"><h3>主介質與耗材</h3><ul>
+<li><label><input type="checkbox"><span>智利水苔：高品質長纖維，上板前浸泡清水 15–20 分鐘並徹底擰乾</span></label></li>
+<li><label><input type="checkbox"><span>固定線材：2 號或 3 號透明釣魚線（隱形效果佳），或麻繩、尼龍線</span></label></li></ul></div>
+<div class="card"><h3>輔助工具</h3><ul>
+<li><label><input type="checkbox"><span>園藝剪刀</span></label></li>
+<li><label><input type="checkbox"><span>防滑手套</span></label></li>
+<li><label><input type="checkbox"><span>噴霧器</span></label></li>
+<li><label><input type="checkbox"><span>水苔網（視個人需求選用）</span></label></li></ul></div>
+</div>
+<div class="prog"><span id="pt">已備齊 0 / 9 項</span><div class="bar"><i id="pb"></i></div></div>
+</section>
+
+<section id="steps">
+<h2>✂️ 步驟教學<small>4 步完成鹿角蕨水苔上板</small></h2>
+<div class="steps">
+<article class="step">
+<h3>處理介質與木板打底</h3>
+<ul>
+<li><b>水苔預處理：</b>將智利水苔浸濕 15–20 分鐘，取出後用雙手用力擰乾，達到「握緊不滴水、鬆開能成團且不散開」的微濕狀態（水分過多會導致綁線鬆垮且易爛根）。</li>
+<li><b>木板鋪設底層：</b>在木板預定上板的中央位置，鋪一層薄薄的塊狀樹皮或椰塊（厚度約 1–2 公分），建立排水透氣通道，防止水苔緊貼木板造成積水。</li>
+</ul>
+</article>
+<article class="step">
+<h3>植物脫盆與芽點定位</h3>
+<ul>
+<li><b>脫盆與清理：</b>輕柔地將鹿角蕨從塑膠盆中取出，用手指撥除外圍老舊過濕的介質，保留核心健康根系，切勿過度破壞主根系。</li>
+<li><b>尋找生長芽點（關鍵）：</b>仔細觀察鹿角蕨中央，會發現一個細小的綠色毛絨凸起點，即為「芽點（生長點）」。</li>
+<li><b>擺放定位：</b>將處理好的根系放置於木板中央的樹皮層上，再次確認芽點位置無誤。</li>
+</ul>
+<div class="key">⚠️ 芽點方向必須朝上（12 點鐘方向），未來新發出的營養葉與孢子葉才能順利向上與向外舒展。</div>
+</article>
+<article class="step">
+<h3>水苔包覆與半球塑形</h3>
+<ul>
+<li><b>充填水苔：</b>取擰乾的水苔，分次包裹住鹿角蕨的根系與營養葉下方。</li>
+<li><b>手捏塑形：</b>用雙手均勻施壓，將水苔壓實並塑造成圓潤厚實的「半球形水苔丘」（厚度約 3–5 公分）。</li>
+</ul>
+<div class="key">🛡 安全防護：確保芽點完全裸露於水苔之外，絕對不能用水苔蓋住或壓迫，否則新葉會腐爛發黑。</div>
+</article>
+<article class="step">
+<h3>綁線固定與結構收尾</h3>
+<ul>
+<li><b>起線固定：</b>將透明釣魚線一端牢牢綁在木板頂部的螺絲鉤或後方固定點。</li>
+<li><b>對角交叉纏繞：</b>一手壓住水苔球保持形狀，另一手拉緊釣魚線，以「對角線交叉」與「圓弧包覆」的方式纏繞；繞線時保持適度拉力，線段緊貼水苔，將水苔球壓實。</li>
+<li><b>穩定度測試：</b>繞線約 20–30 圈後，將木板翻轉垂直或輕輕搖晃，若植株與水苔球緊密固定、不晃動或鬆脫，即可打結收線並剪斷線頭。</li>
+</ul>
+</article>
+</div>
+</section>
+
+<section id="care">
+<h2>💡 達人貼心提醒與後續照顧<small>正確的環境設定與澆水邏輯，是發根爆盆的 key factor</small></h2>
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" data-t="p1">光照與通風</button>
+<button role="tab" aria-selected="false" data-t="p2">澆水判斷</button>
+<button role="tab" aria-selected="false" data-t="p3">泡水法</button>
+</div>
+<div class="panel on" id="p1">
+<h4>光照需求</h4>
+<p>鹿角蕨喜歡高明亮度的「室內散光」或「過濾陽光」（照度約 1500–3000 Lux）。避免夏季中午無遮蔽的強烈直射，以免葉片灼傷；若室內採光不足，建議架設專業植物燈補光。</p>
+<h4>環境通風</h4>
+<p>通風是養護鹿角蕨的靈魂！良好的空氣流動能加速水苔水分蒸散，形成健康的「乾濕循環」，有效預防根腐病。</p>
+</div>
+<div class="panel" id="p2">
+<h4>嚴禁按固定天數澆水</h4>
+<p>植物的乾濕速度隨四季氣溫與濕度變化，按天數澆水是新手爛根主因。</p>
+<h4>手感測重法（最準確）</h4>
+<ul><li><b>濕重：</b>剛泡完水時，木板拿起來沉甸甸。</li>
+<li><b>乾重：</b>拿起木板感覺明顯變輕，且水苔表面微乾發白時，即為最佳澆水時機。</li></ul>
+</div>
+<div class="panel" id="p3">
+<h4>泡水法（浸盆法）</h4>
+<p>澆水時，將整個水苔球浸入裝滿清水的容器中 10–15 分鐘，讓水苔重新吸飽水分，撈起瀝乾至不滴水後再掛回牆面。</p>
+</div>
+</section>
+
+<section id="pitfalls">
+<h2>🚫 常見新手誤區與避坑指南</h2>
+<div class="pit"><b>誤區一：芽點顛倒或埋入水苔</b><p>芽點裝反會導致葉片生長扭曲，被水苔壓住則易潮濕潰爛。</p></div>
+<div class="pit"><b>誤區二：綁線太鬆</b><p>水苔乾燥後會收縮，若最初綁線不夠緊密，水苔球會變形垮下，影響根系附著。</p></div>
+<div class="pit"><b>誤區三：長時間悶濕不通風</b><p>水苔持續高濕再加上通風不良，容易誘發介殼蟲病害或根系發黑死亡。</p></div>
+</section>
+
+<section id="next">
+<h2>💬 後續討論與延伸主題<small>完成上板後，可以考慮的養護規劃</small></h2>
+<div class="grid">
+<div class="card"><h3>植物燈挑選</h3><p style="margin:0">您家的室內光線條件如何？可依鹿角蕨生長所需的波長與距離設定，挑選合適的植物燈規格。</p></div>
+<div class="card"><h3>施肥與養分補充</h3><p style="margin:0">想了解春天生長季如何搭配緩釋肥（如好康多）與液態葉面肥嗎？</p></div>
+</div>
+</section>
+</main>
+<footer>🌿 讓綠意掛上牆面，與植物一起慢慢長大。</footer>
+
+<script>
+(function(){
+var boxes=document.querySelectorAll('.card input[type=checkbox]');
+function up(){var n=0;boxes.forEach(function(b){if(b.checked)n++});
+document.getElementById('pt').textContent='已備齊 '+n+' / '+boxes.length+' 項';
+document.getElementById('pb').style.width=(n/boxes.length*100)+'%'}
+boxes.forEach(function(b){b.addEventListener('change',up)});up();
+var tabs=document.querySelectorAll('.tabs button');
+tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected','false')});
+t.setAttribute('aria-selected','true');
+document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+document.getElementById(t.dataset.t).classList.add('on')})});
+})();
+</script>
+</body>
+</html>
