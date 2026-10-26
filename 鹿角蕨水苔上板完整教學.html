@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>鹿角蕨水苔上板完整教學</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<style>
+:root{
+  --bg:#f3f5ec; --surface:#ffffff; --ink:#1f2a1c; --muted:#5b6654;
+  --board:#2a211b; --moss:#dfe8c8; --fern:#4f7f2e; --bark:#8a6a4a; --warn:#b3402a; --warn-bg:#fbe9e4; --line:#d5dcc4;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#161a13; --surface:#20261c; --ink:#eef2e3; --muted:#a6b19a;
+    --moss:#33402a; --fern:#9cc96b; --bark:#c4a27c; --warn:#ff9a82; --warn-bg:#3a211b; --line:#34402d;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161a13; --surface:#20261c; --ink:#eef2e3; --muted:#a6b19a;
+  --moss:#33402a; --fern:#9cc96b; --bark:#c4a27c; --warn:#ff9a82; --warn-bg:#3a211b; --line:#34402d;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+h1,h2,h3{font-family:"Noto Serif TC","Songti TC",serif;line-height:1.3;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+section{padding:44px 0 0}
+h2{font-size:1.5rem;font-weight:900;margin-bottom:18px}
+
+.hero{background:var(--board);color:#f1f3e6;padding:48px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,5.5vw,3rem);font-weight:900;color:#f6f8ec}
+.hero p{margin:16px 0 0;color:#cfd6bd;max-width:30em}
+.hero svg{width:100%;height:auto;display:block}
+
+.mats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mats div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.mats h3{font-size:1.05rem;margin-bottom:8px;color:var(--fern)}
+.mats ul{margin:0;padding-left:1.1em;color:var(--ink)}
+.mats li{margin:2px 0}
+.mats small{color:var(--muted);display:block;margin-top:6px;line-height:1.5}
+
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 26px 62px;border-left:2px solid var(--line);margin-left:20px}
+ol.steps li:last-child{padding-bottom:0;border-left-color:transparent}
+ol.steps li::before{content:counter(s);position:absolute;left:-21px;top:0;width:40px;height:40px;border-radius:50%;background:var(--fern);color:#fff;font:900 1.1rem/40px "Noto Serif TC",serif;text-align:center}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) ol.steps li::before{color:#16200f}}
+ol.steps h3{font-size:1.15rem;margin-bottom:4px}
+ol.steps p{margin:0;color:var(--muted)}
+mark{background:var(--moss);color:var(--ink);padding:1px 6px;border-radius:4px;font-weight:700}
+
+.care{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.care div{background:var(--moss);border-radius:10px;padding:18px 20px}
+.care h3{font-size:1.05rem;margin-bottom:6px}
+.care p{margin:0}
+.warn{margin-top:14px;background:var(--warn-bg);border-left:5px solid var(--warn);border-radius:6px;padding:16px 20px}
+.warn strong{color:var(--warn)}
+
+.cta{margin:48px 0;background:var(--board);color:#f1f3e6;border-radius:14px;padding:28px 26px}
+.cta h2{margin-bottom:10px;color:#f6f8ec}
+.cta p{margin:6px 0;color:#cfd6bd}
+footer{padding:0 0 40px;color:var(--muted);font-size:.9rem;text-align:center}
+
+@media (max-width:700px){
+  .hero .wrap{grid-template-columns:1fr}
+  .mats,.care{grid-template-columns:1fr}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>新手零失敗！<br>鹿角蕨水苔上板完整教學</h1>
+      <p>別再把鹿角蕨擠在小盆栽裡啦！上板不僅能還原自然生長型態，掛在牆上更是極致的居家藝術品。快把這篇收藏起來～</p>
+    </div>
+    <svg viewBox="0 0 300 340" role="img" aria-label="鹿角蕨上板示意圖：木板上有半球形水苔，芽點朝上，釣魚線交叉綁住">
+      <rect x="40" y="20" width="220" height="300" rx="14" fill="#3b2e25" stroke="#5a463a" stroke-width="3"/>
+      <circle cx="150" cy="30" r="5" fill="#15110e"/>
+      <path d="M150 150 C90 130 60 80 70 40 C105 60 135 100 150 150Z" fill="#6f9b45"/>
+      <path d="M150 150 C210 130 240 80 230 40 C195 60 165 100 150 150Z" fill="#6f9b45"/>
+      <path d="M150 150 C140 110 140 70 150 36 C160 70 160 110 150 150Z" fill="#8bb85a"/>
+      <ellipse cx="150" cy="225" rx="85" ry="72" fill="#7a6a3c"/>
+      <ellipse cx="150" cy="215" rx="76" ry="62" fill="#a38f54"/>
+      <circle cx="150" cy="160" r="12" fill="#c9e08a" stroke="#f1f3e6" stroke-width="2"/>
+      <line x1="62" y1="140" x2="238" y2="305" stroke="#e8efe0" stroke-width="1.6" opacity=".85"/>
+      <line x1="238" y1="140" x2="62" y2="305" stroke="#e8efe0" stroke-width="1.6" opacity=".85"/>
+      <line x1="200" y1="158" x2="262" y2="158" stroke="#c9e08a" stroke-width="1.5"/>
+      <text x="206" y="150" fill="#c9e08a" font-size="13" font-family="Noto Sans TC,sans-serif">芽點朝上</text>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>🛠 準備材料與工具</h2>
+    <div class="mats">
+      <div>
+        <h3>主角</h3>
+        <ul><li>鹿角蕨</li></ul>
+        <small>確保根系健康</small>
+      </div>
+      <div>
+        <h3>介質</h3>
+        <ul><li>炭化木板</li><li>智利水苔</li><li>塊狀樹皮</li></ul>
+        <small>水苔先泡水擰乾；樹皮用來打底透氣</small>
+      </div>
+      <div>
+        <h3>工具</h3>
+        <ul><li>2 號透明釣魚線</li><li>剪刀</li><li>S 鉤</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>✂️ 4 步手作重點</h2>
+    <ol class="steps">
+      <li>
+        <h3>介質打底</h3>
+        <p>水苔擰乾至「握緊不滴水」，鋪少量樹皮作透氣底層。</p>
+      </li>
+      <li>
+        <h3>正確定位</h3>
+        <p>脫盆後置於中央，<mark>成長芽點</mark>必須朝上且完全露出！</p>
+      </li>
+      <li>
+        <h3>塑形包覆</h3>
+        <p>水苔捏成圓潤半球型，芽點周圍保持乾淨。</p>
+      </li>
+      <li>
+        <h3>交叉綁線</h3>
+        <p>釣魚線對角線緊密拉綁，直到木板翻轉植物不搖晃。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>💡 達人貼心養護提醒</h2>
+    <div class="care">
+      <div>
+        <h3>光照通風</h3>
+        <p>置於明亮散光處。環境「通風」是水苔不爛根的關鍵！</p>
+      </div>
+      <div>
+        <h3>澆水時機</h3>
+        <p>嚴禁按天數澆水！請用手感測重：拿起木板感覺明顯變輕、水苔表面乾爽發白時，全株浸水（泡水法）10–15 分鐘吸飽即可。</p>
+      </div>
+    </div>
+    <div class="warn">
+      <strong>❌ 新手常見誤區</strong><br>
+      芽點裝反或被水苔埋住，會導致新葉無法生長、腐爛喔！
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>👉 你的鹿角蕨也想換新家嗎？</h2>
+    <p>需要為您推薦適合您家環境的植物燈規格嗎？</p>
+    <p>還是想了解這款鹿角蕨後續該如何施肥補充養分呢？</p>
+    <p>歡迎留言討論！</p>
+  </section>
+
+</main>
+<footer class="wrap">鹿角蕨水苔上板教學</footer>
+
+</body>
+</html>
